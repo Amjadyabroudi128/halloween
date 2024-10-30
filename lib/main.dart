@@ -14,25 +14,35 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool isDarkMode = false;
 
-  void toggleButton () {
+  void toggleButton() {
     setState(() {
       isDarkMode = !isDarkMode;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        brightness: isDarkMode ? Brightness.dark : Brightness.light
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
+      home: MyHomePage(
+        isDarkMode: isDarkMode,
+        toggleDarkMode: toggleButton,
+      ),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key,});
+  final bool isDarkMode;
+  final Function toggleDarkMode;
+  const MyHomePage({
+    super.key,
+    required this.isDarkMode,
+    required this.toggleDarkMode,
+  });
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -43,17 +53,23 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-
-        ],
         title: const Text("Happy Halloween"),
-        backgroundColor: Colors.orangeAccent
+        backgroundColor: Colors.orangeAccent,
+        actions: [
+          Switch(
+            value: widget.isDarkMode,
+            onChanged: (value) {
+              widget.toggleDarkMode();
+            },
+            activeColor: Colors.white,
+          ),
+        ],
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-
+          children: const <Widget>[
+            Text("Toggle theme using the switch in the app bar!"),
           ],
         ),
       ),
