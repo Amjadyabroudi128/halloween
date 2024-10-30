@@ -4,13 +4,27 @@ void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+
+  void toggleButton () {
+    setState(() {
+      isDarkMode = !isDarkMode;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: isDarkMode ? Brightness.dark : Brightness.light
+      ),
       debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
@@ -29,6 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+
+        ],
         title: const Text("Happy Halloween"),
         backgroundColor: Colors.orangeAccent
       ),
@@ -36,9 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
+
           ],
         ),
       ),
