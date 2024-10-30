@@ -30,11 +30,21 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.only(left: 10),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children:  <Widget>[
-            Text(widget.isDarkMode ?  "" : "Turn the Lights off 👀 ", style: TextStyle(fontSize: 27), ),
+          children: [
+            widget.isDarkMode ? Image.asset("images/mySpider.gif", width: 200,
+              height: 200,) : SizedBox(),
+            SizedBox(height: 170,),
+            Center(
+                child: widget.isDarkMode ? Image.asset("images/ghost.gif", width: 200, height: 200,) : SizedBox()
+            ),
+            SizedBox(height: 200,),
+            widget.isDarkMode ? SizedBox() : Text(
+              "Turn the Lights off 👀",
+              style: TextStyle(fontSize: 27),
+            )
           ],
         ),
       ),
