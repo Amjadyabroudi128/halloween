@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:  <Widget>[
-            Text(widget.isDarkMode ?  "" : "Turn the Lights off " ),
+            Text(widget.isDarkMode ?  "" : "Turn the Lights off 👀 ", style: TextStyle(fontSize: 27), ),
           ],
         ),
       ),
