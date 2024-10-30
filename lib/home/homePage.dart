@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Happy Halloween"),
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: widget.isDarkMode ? Colors.orangeAccent : Colors.transparent,
         actions: [
           Switch(
             value: widget.isDarkMode,
@@ -33,8 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text("Toggle theme using the switch in the app bar!"),
+          children:  <Widget>[
+            Text(widget.isDarkMode ?  "" : "Turn the Lights off " ),
           ],
         ),
       ),
