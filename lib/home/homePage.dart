@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
             widget.isDarkMode ? spiderImage() : SizedBox(),
             SizedBox(height: 170,),
             Center(
-                child: widget.isDarkMode ? Image.asset("images/ghost.gif", width: 200, height: 200,) : SizedBox()
+                child: widget.isDarkMode ? ghostImage() : SizedBox()
             ),
             SizedBox(height: 200,),
             widget.isDarkMode ? SizedBox() : Text(
@@ -47,5 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
 
 
