@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/consts.dart';
 import 'package:halloween/home/widgets/SwitchWidget.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -20,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Happy Halloween"),
-        backgroundColor: widget.isDarkMode ? Colors.orangeAccent : Colors.transparent,
+        backgroundColor: widget.isDarkMode ? appBar : aB,
         actions: [
           SwitchHalloween(widget: widget),
         ],
