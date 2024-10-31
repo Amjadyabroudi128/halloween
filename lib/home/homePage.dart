@@ -3,7 +3,7 @@ import 'package:halloween/consts.dart';
 import 'package:halloween/home/widgets/SwitchWidget.dart';
 import 'package:halloween/home/widgets/ghostImage.dart';
 import 'package:halloween/home/widgets/spiderImage.dart';
-
+import 'package:audioplayers/audioplayers.dart';
 class MyHomePage extends StatefulWidget {
   final bool isDarkMode;
   final Function toggleDarkMode;
