@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:halloween/consts.dart';
 import 'package:halloween/home/widgets/SwitchWidget.dart';
+import 'package:halloween/home/widgets/spiderImage.dart';
 
 class MyHomePage extends StatefulWidget {
   final bool isDarkMode;
@@ -30,8 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.only(left: 10),
         child: Column(
           children: [
-            widget.isDarkMode ? Image.asset("images/mySpider.gif", width: 200,
-              height: 200,) : SizedBox(),
+            widget.isDarkMode ? spiderImage() : SizedBox(),
             SizedBox(height: 170,),
             Center(
                 child: widget.isDarkMode ? Image.asset("images/ghost.gif", width: 200, height: 200,) : SizedBox()
@@ -47,4 +47,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
