@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/home/widgets/SwitchWidget.dart';
 
 class MyHomePage extends StatefulWidget {
   final bool isDarkMode;
@@ -21,13 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Happy Halloween"),
         backgroundColor: widget.isDarkMode ? Colors.orangeAccent : Colors.transparent,
         actions: [
-          Switch(
-            value: widget.isDarkMode,
-            onChanged: (value) {
-              widget.toggleDarkMode();
-            },
-            activeColor: Colors.white,
-          ),
+          SwitchHalloween(widget: widget),
         ],
       ),
       body: Padding(
@@ -51,3 +46,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
