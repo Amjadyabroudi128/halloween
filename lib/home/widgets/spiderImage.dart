@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/consts.dart';
 
 class spiderImage extends StatelessWidget {
   const spiderImage({
@@ -7,7 +8,7 @@ class spiderImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset("images/mySpider.gif", width: 200,
+    return Image.asset( spider, width: 200,
       height: 200,);
   }
 }
