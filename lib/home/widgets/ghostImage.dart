@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/consts.dart';
 
 class ghostImage extends StatelessWidget {
   const ghostImage({
@@ -7,6 +8,6 @@ class ghostImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset("images/ghost.gif", width: 200, height: 200,);
+    return Image.asset( ghost, width: 200, height: 200,);
   }
 }
