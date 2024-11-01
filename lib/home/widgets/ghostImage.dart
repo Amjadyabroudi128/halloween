@@ -8,6 +8,6 @@ class ghostImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset( ghost, width: 200, height: 200,);
+    return Image.asset( ghost, width: Iwidth, height: Iheight,);
   }
 }
