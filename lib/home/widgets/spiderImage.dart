@@ -8,7 +8,6 @@ class spiderImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset( spider, width: 200,
-      height: 200,);
+    return Image.asset( spider, width: Iwidth, height: Iheight,);
   }
 }
