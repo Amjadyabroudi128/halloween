@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/Theme/theme.dart';
 
 import 'home/homePage.dart';
 
@@ -25,9 +26,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        brightness: isDarkMode ? Brightness.dark : Brightness.light,
-      ),
+      theme: MyTheme.getTheme(isDarkMode),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(
         isDarkMode: isDarkMode,
