@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Center(
                 child: widget.isDarkMode ? ghostImage() : SizedBox()
             ),
-            SizedBox(height: 200,),
+            height200,
             widget.isDarkMode ? SizedBox() : Text(
               "Turn the Lights off 👀",
               style: TextStyle(fontSize: 27),
