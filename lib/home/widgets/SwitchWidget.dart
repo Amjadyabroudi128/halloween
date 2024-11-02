@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halloween/consts.dart';
 
 import '../homePage.dart';
 
@@ -17,7 +18,7 @@ class SwitchHalloween extends StatelessWidget {
       onChanged: (value) {
         widget.toggleDarkMode();
       },
-      activeColor: Colors.white,
+      activeColor: mywhite,
     );
   }
 }
