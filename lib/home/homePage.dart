@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             height200,
             widget.isDarkMode ? SizedBox() : Text(
-              "Turn the Lights off 👀",
+              light,
               style: TextStyle(fontSize: 27),
             )
           ],
