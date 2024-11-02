@@ -11,3 +11,5 @@ String ghost = "images/ghost.gif";
 // heights
 double Iheight = 200;
 double Iwidth = 200;
+//sizedBox
+SizedBox height200 = SizedBox(height: 200,);
