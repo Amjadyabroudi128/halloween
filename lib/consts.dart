@@ -8,6 +8,7 @@ Color mywhite = Colors.white;
 // images
 String spider = "images/mySpider.gif";
 String ghost = "images/ghost.gif";
+String light = "Turn the Lights off 👀";
 // heights
 double Iheight = 200;
 double Iwidth = 200;
