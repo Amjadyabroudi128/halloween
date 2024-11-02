@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             widget.isDarkMode ? spiderImage() : SizedBox(),
-            SizedBox(height: 170,),
+            height170,
             Center(
                 child: widget.isDarkMode ? ghostImage() : SizedBox()
             ),
