@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Happy Halloween"),
+        title:  Text(happy),
         backgroundColor: widget.isDarkMode ? appBar : aB,
         actions: [
           SwitchHalloween(widget: widget),
