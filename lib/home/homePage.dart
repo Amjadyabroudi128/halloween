@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height200,
             widget.isDarkMode ? SizedBox() : Text(
               light,
-              style: TextStyle(fontSize: 27),
+              style: Tlight,
             )
           ],
         ),
