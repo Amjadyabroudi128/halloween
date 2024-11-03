@@ -31,7 +31,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text(happy),
+                      child: Text(happy, style:
+                      TextStyle(fontSize: 17, fontWeight: FontWeight.bold,
+                          color: widget.isDarkMode ? Colors.purple : Colors.black ),),
                     ),
                     Spacer(),
                     SwitchHalloween(widget: widget),
