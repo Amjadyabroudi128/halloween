@@ -11,6 +11,7 @@ String ghost = "images/ghost.gif";
 String light = "Turn the Lights off 👀";
 String happy = "Happy Halloween";
 TextStyle Tlight = TextStyle(fontSize: 27);
+TextStyle Tpadding = TextStyle();
 // heights
 double Iheight = 200;
 double Iwidth = 200;
