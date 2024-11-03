@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 2, top: 40,),
+          padding: const EdgeInsets.only(left: 2, top: 25,),
           child: Column(
             children: [
               Container(
