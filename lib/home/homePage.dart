@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:halloween/consts.dart';
 import 'package:halloween/home/widgets/SwitchWidget.dart';
+import 'package:halloween/home/widgets/centreImage.dart';
 import 'package:halloween/home/widgets/ghostImage.dart';
 import 'package:halloween/home/widgets/spiderImage.dart';
 class MyHomePage extends StatefulWidget {
@@ -46,21 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class centreImage extends StatelessWidget {
-  const centreImage({
-    super.key,
-    required this.widget,
-  });
 
-  final MyHomePage widget;
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: widget.isDarkMode ? ghostImage() : SizedBox()
-    );
-  }
-}
 
 
 
