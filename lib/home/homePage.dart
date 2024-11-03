@@ -20,26 +20,34 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title:  Text(happy),
-        backgroundColor: widget.isDarkMode ? appBar : aB,
-        actions: [
-          SwitchHalloween(widget: widget),
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 10),
-        child: Column(
-          children: [
-            widget.isDarkMode ? spiderImage() : SizedBox(),
-            height170,
-            centreImage(widget: widget),
-            height200,
-            widget.isDarkMode ? SizedBox() : Text(
-              light,
-              style: Tlight,
-            )
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 2, top: 40,),
+          child: Column(
+            children: [
+              Container(
+                color: widget.isDarkMode ? appBar : aB,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(happy),
+                    ),
+                    Spacer(),
+                    SwitchHalloween(widget: widget),
+                  ],
+                ),
+              ),
+              widget.isDarkMode ? spiderImage() : SizedBox(),
+              height170,
+              centreImage(widget: widget),
+              height200,
+              widget.isDarkMode ? SizedBox() : Text(
+                light,
+                style: Tlight,
+              )
+            ],
+          ),
         ),
       ),
     );
