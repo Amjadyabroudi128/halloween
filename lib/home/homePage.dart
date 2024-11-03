@@ -33,9 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             widget.isDarkMode ? spiderImage() : SizedBox(),
             height170,
-            Center(
-                child: widget.isDarkMode ? ghostImage() : SizedBox()
-            ),
+            centreImage(widget: widget),
             height200,
             widget.isDarkMode ? SizedBox() : Text(
               light,
@@ -44,6 +42,22 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class centreImage extends StatelessWidget {
+  const centreImage({
+    super.key,
+    required this.widget,
+  });
+
+  final MyHomePage widget;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+        child: widget.isDarkMode ? ghostImage() : SizedBox()
     );
   }
 }
