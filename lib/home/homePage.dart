@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:halloween/consts.dart';
 import 'package:halloween/home/widgets/SwitchWidget.dart';
 import 'package:halloween/home/widgets/centreImage.dart';
-import 'package:halloween/home/widgets/ghostImage.dart';
 import 'package:halloween/home/widgets/spiderImage.dart';
 class MyHomePage extends StatefulWidget {
   final bool isDarkMode;
