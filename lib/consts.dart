@@ -24,3 +24,4 @@ double Iwidth = 200;
 //sizedBox
 SizedBox height200 = SizedBox(height: 200,);
 SizedBox height170 = SizedBox(height: 170,);
+EdgeInsetsGeometry myPad = EdgeInsets.all(9);
