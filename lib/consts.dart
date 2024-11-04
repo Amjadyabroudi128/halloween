@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 Color? appBar = Colors.orangeAccent;
 Color? aB = Colors.transparent;
 Color mywhite = Colors.white;
+Color dark = Colors.black;
 // images
 String spider = "images/mySpider.gif";
 String ghost = "images/ghost.gif";
@@ -14,7 +15,7 @@ TextStyle Tlight = TextStyle(fontSize: 27);
 TextStyle Tpadding = TextStyle();
 TextStyle darkmode(widget,isDarkMode) {
   return TextStyle(fontSize: 17, fontWeight: FontWeight.bold,
-      color: widget.isDarkMode ? Colors.purple : Colors.black );
+      color: widget.isDarkMode ? Colors.purple : dark );
 }
 // heights
 double Iheight = 200;
