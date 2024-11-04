@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: myPad,
                       child: Text(happy, style: darkmode(widget, widget.isDarkMode)),
                     ),
                     Spacer(),
