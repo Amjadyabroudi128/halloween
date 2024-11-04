@@ -12,6 +12,10 @@ String light = "Turn the Lights off 👀";
 String happy = "Happy Halloween";
 TextStyle Tlight = TextStyle(fontSize: 27);
 TextStyle Tpadding = TextStyle();
+TextStyle darkmode(widget,isDarkMode) {
+  return TextStyle(fontSize: 17, fontWeight: FontWeight.bold,
+      color: widget.isDarkMode ? Colors.purple : Colors.black );
+}
 // heights
 double Iheight = 200;
 double Iwidth = 200;
